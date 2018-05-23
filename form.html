@@ -7,9 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="GET" action="">
-        <label>Name</label>
-        <input type="text" placeholder="Name">
+    <form method="POST" action="http://formspree.io/tetgorshkova@ukr.net">
+        <label for="client-name">Name</label>
+        <input type="text" id="client-name" placeholder="Name"
+        name="client-name">
+        <label>Email:
+        <input type="email" placeholder="email"
+        name="client-email">
+        </label>
+        <br>
+            <label>Gender:</label>
+            <label>
+                <input type="radio" name="gender" value="male">male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other">other
+            </label>
+                <input type="submit" value="Send">
+        <input type="reset">
     </form>
 </body>
 </html>
